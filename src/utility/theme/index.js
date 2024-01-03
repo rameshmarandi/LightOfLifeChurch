@@ -175,7 +175,7 @@ const theme = {
   // listDataArray,
   // regex,
   color,
-  // font,
+  font,
   // fontSizes,
   // Radius,
   // marginHorizontal: 15,

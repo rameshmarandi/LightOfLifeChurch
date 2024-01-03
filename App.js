@@ -14,6 +14,7 @@ function AnimatedSlash() {
           alignItems: 'center',
           backgroundColor: theme.color.darkTheme,
         }}>
+    
         <LottieView
           source={require('./src/assets/animationLoader/wave-animation.json')}
           autoPlay
@@ -32,6 +33,7 @@ function AnimatedSlash() {
             position: 'absolute',
           }}
         />
+        
       </View>
     </>
   );
@@ -45,6 +47,18 @@ const App = () => {
         justifyContent: 'center',
         backgroundColor: 'white',
       }}>
+        <Text style={{
+          width:"100%",
+          alignSelf:"center",
+          fontSize: 15,
+          color:"white",
+          justifyContent:"center",
+          textAlign:"center",
+          fontFamily: theme.font.medium,
+          position:"absolute",
+          bottom:"5%",
+          zIndex:9999
+        }}>Light Of Life Chruch</Text>
       <AnimatedSlash />
     </View>
   );

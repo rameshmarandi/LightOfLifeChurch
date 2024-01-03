@@ -2,6 +2,11 @@
   "name": "LightOfLifeChurch",
   "version": "0.0.1",
   "private": true,
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts"
+    ]
+  },
   "scripts": {
     "8": "react-native run-ios --simulator \"iPhone 8\"",
     "13": "react-native run-ios --simulator \"iPhone 13 Pro Max\"",
