@@ -1,4 +1,4 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image , StatusBar} from 'react-native';
 import React from 'react';
 import LottieView from 'lottie-react-native';
 import theme from './src/utility/theme';
@@ -8,7 +8,6 @@ function AnimatedSlash() {
       <View
         style={{
           height: '100%',
-          // getResHeight(250),
           width: '100%',
           justifyContent: 'center',
           alignItems: 'center',
@@ -24,21 +23,26 @@ function AnimatedSlash() {
             width: '100%',
           }}
         />
+      
         <Image
           source={theme.assets.church_logo_origianl}
           resizeMode="center"
           style={{
             height: '50%',
             width: '50%',
-            position: 'absolute',
+            position:"absolute",
+            
           }}
         />
-        
+       
       </View>
     </>
   );
 }
 const App = () => {
+  StatusBar.setBarStyle('light-content');
+  StatusBar.setBackgroundColor(theme.color.darkTheme); // Set your desired background color
+
   return (
     <View
       style={{
@@ -54,7 +58,7 @@ const App = () => {
           color:"white",
           justifyContent:"center",
           textAlign:"center",
-          fontFamily: theme.font.medium,
+          // fontFamily: 'Poppins Bold 700',
           position:"absolute",
           bottom:"5%",
           zIndex:9999

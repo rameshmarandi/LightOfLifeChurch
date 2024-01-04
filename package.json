@@ -38,6 +38,7 @@
     "build/apk": "open ./android/app/build/outputs/apk/release"
   },
   "dependencies": {
+    "lottie-ios": "^4.3.4",
     "lottie-react-native": "^6.5.0",
     "react": "18.2.0",
     "react-native": "0.71.3",
